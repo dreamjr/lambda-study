@@ -1,17 +1,17 @@
-package map;
+package main.map;
 
-import filter.domain.Name;
+import main.filter.domain.Name;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class MapTest {
+public class MapOperation {
     List<String> names = Arrays.asList("jeong", "pro", "jdk", "java");
     List<Name> nameList = new ArrayList<>();
 
-    public MapTest() {
+    public MapOperation() {
         nameList.add(new Name("Lee Chunghee", 41));
         nameList.add(new Name("Lee Yein", 13));
         nameList.add(new Name("Lee Yeyoung", 10));

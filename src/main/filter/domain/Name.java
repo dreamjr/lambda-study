@@ -1,4 +1,4 @@
-package filter.domain;
+package main.filter.domain;
 
 public class Name {
     private String name;

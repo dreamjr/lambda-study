@@ -1,6 +1,6 @@
-package filter;
+package main.filter;
 
-import filter.domain.Name;
+import main.filter.domain.Name;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,12 +8,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class FilterTest {
+public class FilterOperation {
 
     List<String> names = Arrays.asList("jeong", "pro", "jdk", "java");
     List<Name> nameList = new ArrayList<>();
 
-    public FilterTest() {
+    public FilterOperation() {
         nameList.add(new Name("Lee Chunghee", 41));
         nameList.add(new Name("Lee Yein", 13));
         nameList.add(new Name("Lee Yeyoung", 10));
@@ -33,5 +33,4 @@ public class FilterTest {
         List<Name> filteredNameList = nameList.stream().filter(name -> name.getAge() > 10).collect(Collectors.toList());
         System.out.println(filteredNameList);
     }
-
 }
