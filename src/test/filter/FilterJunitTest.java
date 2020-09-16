@@ -29,6 +29,6 @@ public class FilterJunitTest extends BaseTest {
 
     @Test
     public void fialedTest3() {
-        fail("FailTest");
+        // fail("FailTest");
     }
 }

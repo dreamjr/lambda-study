@@ -19,6 +19,9 @@ dependencies {
 }
 
 test {
+    testLogging {
+        showStandardStreams = true
+    }
     useJUnitPlatform()
 }
 
