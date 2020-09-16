@@ -5,6 +5,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import test.filter.common.BaseTest;
 
+import static org.junit.jupiter.api.Assertions.fail;
+
 
 public class FilterJunitTest extends BaseTest {
 
@@ -23,5 +25,10 @@ public class FilterJunitTest extends BaseTest {
     @Test
     public void printFilteredNamesTest2() {
         filterOperation.printFilteredNameList();
+    }
+
+    @Test
+    public void fialedTest3() {
+        fail("FailTest");
     }
 }
